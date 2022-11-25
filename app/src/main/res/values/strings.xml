@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProcyectoMovil</string>
+    <string name="login">INICIAR SESIÓN</string>
+    <string name="msg_cuenta">¿No tienes una cuenta?</string>
+    <string name="msg_crear_cuenta">Crear cuenta</string>
+    <string name="welcome">Bienvenidos Restaurante Bambú</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="msg_olvido">¿Se te olvido la contraseña?</string>
+</resources>
