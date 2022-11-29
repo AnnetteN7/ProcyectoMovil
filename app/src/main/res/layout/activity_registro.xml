@@ -34,11 +34,27 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
             android:layout_marginRight="32dp"
-            android:text="@string/welcome"
+            android:text="@string/msg_crear_cuenta"
             android:textAlignment="center"
             android:textColor="#090808"
             android:textSize="30sp"
             android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="16dp"
+            android:padding="8dp"
+            android:background="@drawable/edittext_back"
+            android:inputType="textPersonName"
+            android:hint="@string/user"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#888383"/>
 
         <EditText
             android:id="@+id/etEmail"
@@ -57,7 +73,7 @@
             android:textColorHint="#888383"/>
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/etClave"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="32dp"
@@ -71,31 +87,38 @@
             android:inputType="textPassword"
             android:padding="8dp"
             android:textColorHint="#888383" />
+        <EditText
+            android:id="@+id/etConfClave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/edittext_back"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="@string/confirmar_password"
+            android:layout_marginTop="16dp"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColorHint="#888383" />
 
         <Button
-            android:id="@+id/btn_inicio"
+            android:id="@+id/btn_registro"
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="62dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="8dp"
             android:backgroundTint="#F6C70D"
-            android:text="@string/login"
+            android:text="@string/crear"
             android:textAlignment="center"
             android:elevation="15dp"
             android:textColor="#000000"
             android:textSize="20sp"
             app:cornerRadius="20dp" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="@string/msg_olvido"
-            android:textAlignment="center"
-            android:textColor="#FF1744"
-            android:textSize="16sp" />
+
     </LinearLayout>
 
     <ImageView

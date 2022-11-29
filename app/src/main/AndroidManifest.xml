@@ -13,15 +13,32 @@
         android:theme="@style/Theme.ProcyectoMovil"
         tools:targetApi="31">
         <activity
-            android:name=".InicioActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
-            android:exported="false">
+            android:name=".Principal"
+            android:exported="false"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/Theme.ProcyectoMovil.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:name=".RegisterActivity"
             android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

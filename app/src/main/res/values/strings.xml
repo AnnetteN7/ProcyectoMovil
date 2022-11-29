@@ -3,8 +3,27 @@
     <string name="login">INICIAR SESIÓN</string>
     <string name="msg_cuenta">¿No tienes una cuenta?</string>
     <string name="msg_crear_cuenta">Crear cuenta</string>
+    <string name="msg_failure">Error de registro</string>
     <string name="welcome">Bienvenidos Restaurante Bambú</string>
     <string name="email">Email</string>
     <string name="password">Contraseña</string>
     <string name="msg_olvido">¿Se te olvido la contraseña?</string>
+
+    <string name="registre">CREAR CUENTA</string>
+    <string name="user">Nombre</string>
+    <string name="confirmar_password">Confirmar Contraseña</string>
+    <string name="crear">CREAR CUENTA</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
 </resources>
