@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "48781894448",
+    "firebase_url": "https://proyectofinal-b2bf1.firebaseio.com",
+    "project_id": "proyectofinal-b2bf1",
+    "storage_bucket": "proyectofinal-b2bf1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48781894448:android:7baee388c79d1982c8def5",
+        "android_client_info": {
+          "package_name": "com.example.nutricion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48781894448-kjtms81a7cltavs0iu6m9qpqsmh0jdb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1OW8kWrdaj7uqbtQlRAVTUtfHMOL1dbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48781894448-kjtms81a7cltavs0iu6m9qpqsmh0jdb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48781894448:android:aa7ec94f4f507d71c8def5",
+        "android_client_info": {
+          "package_name": "com.example.procyectomovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48781894448-kjtms81a7cltavs0iu6m9qpqsmh0jdb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1OW8kWrdaj7uqbtQlRAVTUtfHMOL1dbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48781894448-kjtms81a7cltavs0iu6m9qpqsmh0jdb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
