@@ -21,6 +21,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="msg_gracias">Gracias por su compra!</string>
+    <string name="msg_sinpe">Pagar con SINPE</string>
+    <string name="msg_restaurante">Pagar en Restaurante</string>
+    <string name="msg_cancelar">Cancelar Orden</string>
+
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
