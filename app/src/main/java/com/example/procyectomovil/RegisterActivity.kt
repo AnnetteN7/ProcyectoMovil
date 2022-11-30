@@ -3,6 +3,7 @@ package com.example.procyectomovil
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.example.procyectomovil.databinding.ActivityRegistroBinding
 import com.google.firebase.FirebaseApp
@@ -21,34 +22,34 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistroBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         FirebaseApp.initializeApp(this)
         auth = Firebase.auth
-
-
-
             binding.btnRegistro.setOnClickListener{createRegister()}
         }
 
 
 
     private fun createRegister() {
-    val name = binding.etUser.text.toString()
-    val email = binding.etEmail.text.toString()
-    val clave = binding.etClave.text.toString()
+//Recupero la información que el usuario escribió en el App
+        val email = binding.etEmail.text.toString()
+        val clave = binding.etClave.text.toString()
 
-
-
+        Log.d("Registrándose","Haciendo llamado a creación")
+        //Utilizo el objeto auth para hacer el registro...
         auth.createUserWithEmailAndPassword(email,clave)
             .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful){
+                if (task.isSuccessful) {  //Si se logró... se creo el usuario
+                    Log.d("Registrándose","se registró")
                     val user = auth.currentUser
                     refresh(user)
-                } else {
-                    Toast.makeText(baseContext,getString(R.string.msg_failure),Toast.LENGTH_LONG).show()
+                } else { //Si no se logró hubo un error...
+                    Log.e("Registrándose","Error de registró")
+                    println(task.exception.toString())
+                    Toast.makeText(baseContext,task.exception.toString(), Toast.LENGTH_LONG).show()
                     refresh(null)
                 }
             }
+        Log.d("Registrándose","Sale del proceso...")
     }
 
     private fun refresh(user: FirebaseUser?) {

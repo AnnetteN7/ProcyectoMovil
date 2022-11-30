@@ -9,6 +9,12 @@
     <string name="password">Contraseña</string>
     <string name="msg_olvido">¿Se te olvido la contraseña?</string>
 
+    <string name="msg_orden">Mi orden</string>
+    <string name="msg_comida">Comida Seleccionada</string>
+    <string name="msg_subtotal">Sub Total</string>
+    <string name="msg_iva">Impuestos IVA</string>
+    <string name="msg_total">Total</string>
+
     <string name="registre">CREAR CUENTA</string>
     <string name="user">Nombre</string>
     <string name="confirmar_password">Confirmar Contraseña</string>
