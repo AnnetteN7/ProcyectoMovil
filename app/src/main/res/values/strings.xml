@@ -14,6 +14,11 @@
     <string name="msg_subtotal">Sub Total</string>
     <string name="msg_iva">Impuestos IVA</string>
     <string name="msg_total">Total</string>
+    <string name="msg_categoria">Categoria</string>
+    <string name="msg_agregar">Agregar Compra</string>
+    <string name="msg_precio">Precio Total</string>
+
+
 
     <string name="registre">CREAR CUENTA</string>
     <string name="user">Nombre</string>
