@@ -26,8 +26,8 @@
     <string name="title_activity_principal">Principal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Usuario</string>
+    <string name="nav_header_subtitle">usuario@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -41,9 +41,15 @@
     <string name="msg_categorias">Categorias</string>
     <string name="msg_populares">Populares</string>
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_ordenar">Ordenar</string>
+    <string name="menu_pagar">Pagar</string>
+    <string name="todo">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-
-
+    <string name="msg_ordenar">Mi orden</string>
+     <string name="msg_seleccionada">Comida seleccionada</string>
+    <string name="msg_sub">Sub Total</string>
+    <string name="msg_impuesto">Impuesto IVA</string>
+    <string name="msg_tol">TOTAL</string>
 </resources>

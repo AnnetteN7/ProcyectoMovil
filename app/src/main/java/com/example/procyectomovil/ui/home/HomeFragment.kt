@@ -7,36 +7,47 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewmodel.savedstate.R
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
+import com.example.procyectomovil.adapter.CategoryAdapter
 import com.example.procyectomovil.databinding.FragmentHomeBinding
+import io.grpc.InternalChannelz.id
+
 
 class HomeFragment : Fragment() {
-
     private var _binding: FragmentHomeBinding? = null
 
     // This property is only valid between onCreateView and
-    // onDestroyView.
+// onDestroyView.
     private val binding get() = _binding!!
+    private lateinit var homeViewModel: HomeViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
 
+        homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        binding.addLugarFabBt.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_home_)
         }
-        return root
-    }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+
+        val categoryAdapter= CategoryAdapter()
+        val reciclador = binding.reciclador
+        reciclador.adapter = categoryAdapter
+        reciclador.layoutManager = LinearLayoutManager(requireContext())
+        homeViewModel.getCategorias.observe(viewLifecycleOwner){
+                categorias -> categoryAdapter.setCategorias(categorias)
     }
-}
+        return binding.root
+    }
+        override fun onDestroyView() {
+            super.onDestroyView()
+            _binding = null
+        }
+    }

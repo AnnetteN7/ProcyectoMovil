@@ -9,19 +9,27 @@
         android:id="@+id/nav_home"
         android:name="com.example.procyectomovil.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_showDetailActivty"
+            app:destination="@id/showDetailActivty" />
+        <argument android:name="category" app:argType="com.example.procyectomovil.model.Category" />
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.procyectomovil.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_ordenar"
+        android:name="com.example.procyectomovil.ui.ordenar.OrdenarFragment"
+        android:label="@string/menu_ordenar"
+        tools:layout="@layout/fragment_ordenar" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.procyectomovil.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_pagar"
+        android:name="com.example.procyectomovil.ui.pagar.PagarFragment"
+        android:label="@string/menu_pagar"
+        tools:layout="@layout/fragment_pagar" />
     <activity
         android:id="@+id/loginActivity"
         android:name="com.example.procyectomovil.LoginActivity"
@@ -31,4 +39,25 @@
         android:id="@+id/mainActivity"
         android:name="com.example.procyectomovil.MainActivity"
         android:label="MainActivity" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.procyectomovil.ui.home.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <activity
+        android:id="@+id/showDetailActivty"
+        android:name="com.example.procyectomovil.ShowDetailActivty"
+        android:label="activity_show_detail_activty"
+        tools:layout="@layout/activity_show_detail_activty">
+        <argument android:name="category"
+            app:argType="com.example.procyectomovil.model.Category" />
+    </activity>
+    <action
+        android:id="@+id/action_nav_home_to_showDetailActivty"
+        app:destination="@id/nav_home" />
+    <argument android:name="category" app:argType="com.example.procyectomovil.model.Category" />
 </navigation>

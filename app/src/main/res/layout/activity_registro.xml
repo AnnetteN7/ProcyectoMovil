@@ -23,7 +23,7 @@
         android:background="@drawable/white_card"
         android:orientation="vertical"
         android:padding="20dp"
-        android:elevation="10dp"
+        android:elevation="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
