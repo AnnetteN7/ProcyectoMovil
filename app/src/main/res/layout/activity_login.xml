@@ -73,7 +73,7 @@
             android:textColorHint="#888383" />
 
         <Button
-            android:id="@+id/btn_agregar"
+            android:id="@+id/btn_inicio"
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginStart="8dp"

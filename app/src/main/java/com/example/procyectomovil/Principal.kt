@@ -24,12 +24,12 @@ class Principal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityPrincipalBinding.inflate(layoutInflater)
+       binding = ActivityPrincipalBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.appBarPrincipal.toolbar)
 
-        binding.appBarPrincipal.fab.setOnClickListener { view ->
+        binding.appBarPrincipal.btaAddCategoryFab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }

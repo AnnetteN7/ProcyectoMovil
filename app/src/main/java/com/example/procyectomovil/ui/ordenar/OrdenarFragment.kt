@@ -29,9 +29,9 @@ class OrdenarFragment : Fragment() {
         _binding = FragmentOrdenarBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textOrdenar
+       /* val textView: TextView = binding.textOrdenar*/
         ordenarViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+           /* textView.text = it*/
         }
         return root
     }

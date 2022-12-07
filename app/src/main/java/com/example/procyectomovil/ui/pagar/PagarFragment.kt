@@ -30,9 +30,9 @@ class PagarFragment : Fragment() {
         _binding = FragmentPagarBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textSlideshow
+       /* val textView: TextView = binding.textPagar*/
         pagarViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+            /*textView.text = it*/
         }
         return root
     }

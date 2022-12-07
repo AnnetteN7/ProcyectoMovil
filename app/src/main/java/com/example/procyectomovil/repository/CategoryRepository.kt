@@ -7,12 +7,12 @@ import com.example.procyectomovil.model.Category
 class CategoryRepository (private val categoryDao: CategoryDao){
 
     fun saveCategory(category: Category) {
-        CategoryDao.saveCategory(category)
+        categoryDao.saveCategory(category)
     }
 
     fun deleteCategory(category : Category) {
-        CategoryDao.deleteCategory(category)
+        categoryDao.deleteCategory(category)
     }
 
-    val getCategorias : MutableLiveData<List<Category>> = CategoryDao.getCategorias()
+    val getCategorias : MutableLiveData<List<Category>> = categoryDao.getCategorias()
 }

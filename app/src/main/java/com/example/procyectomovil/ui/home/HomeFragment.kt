@@ -28,13 +28,13 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-
+/*
         homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-        binding.addLugarFabBt.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_home_)
-        }
+       binding.btaAddCategoryFab.setOnClickListener {
+            findNavController().navigate(R.id.ac)
+        }*/
 
 
         val categoryAdapter= CategoryAdapter()
