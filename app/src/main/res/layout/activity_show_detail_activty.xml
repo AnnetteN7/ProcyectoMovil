@@ -123,7 +123,7 @@
             tools:layout_editor_absoluteY="626dp">
 
             <Button
-                android:id="@+id/btn_inicio"
+                android:id="@+id/btnInicio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
