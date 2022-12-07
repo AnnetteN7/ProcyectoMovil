@@ -1,4 +1,4 @@
-package com.example.procyectomovil.ui.pagar
+package com.example.procyectomovil.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

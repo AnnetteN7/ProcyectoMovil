@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 import com.example.procyectomovil.databinding.FragmentHomeBinding
+import com.example.procyectomovil.viewmodel.HomeViewModel
 
 
 class MenuFragment : Fragment() {

@@ -47,9 +47,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="msg_ordenar">Mi orden</string>
-     <string name="msg_seleccionada">Comida seleccionada</string>
-    <string name="msg_sub">Sub Total</string>
-    <string name="msg_impuesto">Impuesto IVA</string>
-    <string name="msg_tol">TOTAL</string>
+
+
+
+
+    <string name="msg_producto">Nombre del producto</string>
+    <string name="msg_cantidad">Cantidad</string>
 </resources>

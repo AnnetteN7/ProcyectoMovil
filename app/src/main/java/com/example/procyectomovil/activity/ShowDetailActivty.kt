@@ -1,7 +1,8 @@
-package com.example.procyectomovil
+package com.example.procyectomovil.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.procyectomovil.R
 
 class ShowDetailActivty : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

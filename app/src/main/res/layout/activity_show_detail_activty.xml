@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FCFFFFFF"
-    tools:context=".ShowDetailActivty">
+    tools:context=".activity.ShowDetailActivty">
 
     <ScrollView
         android:id="@+id/scrollView2"

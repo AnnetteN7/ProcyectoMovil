@@ -1,4 +1,4 @@
-package com.example.procyectomovil
+package com.example.procyectomovil.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -54,7 +54,7 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun refresh(user: FirebaseUser?) {
        if (user!=null){
-           val  intent = Intent(this,LoginActivity::class.java)
+           val  intent = Intent(this, LoginActivity::class.java)
            startActivity(intent)
        }
     }

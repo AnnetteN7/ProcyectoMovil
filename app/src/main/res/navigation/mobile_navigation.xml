@@ -32,12 +32,12 @@
         tools:layout="@layout/fragment_pagar" />
     <activity
         android:id="@+id/loginActivity"
-        android:name="com.example.procyectomovil.LoginActivity"
+        android:name="com.example.procyectomovil.activity.LoginActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.example.procyectomovil.MainActivity"
+        android:name="com.example.procyectomovil.activity.MainActivity"
         android:label="MainActivity" />
     <fragment
         android:id="@+id/menuFragment"
@@ -50,7 +50,7 @@
     </fragment>
     <activity
         android:id="@+id/showDetailActivty"
-        android:name="com.example.procyectomovil.ShowDetailActivty"
+        android:name="com.example.procyectomovil.activity.ShowDetailActivty"
         android:label="activity_show_detail_activty"
         tools:layout="@layout/activity_show_detail_activty">
         <argument android:name="category"

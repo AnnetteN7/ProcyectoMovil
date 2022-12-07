@@ -1,4 +1,4 @@
-package com.example.procyectomovil.ui.home
+package com.example.procyectomovil.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

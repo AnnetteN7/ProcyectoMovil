@@ -1,10 +1,11 @@
-package com.example.procyectomovil
+package com.example.procyectomovil.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.procyectomovil.Principal
 import com.example.procyectomovil.databinding.ActivityLoginBinding
 import com.google.firebase.FirebaseApp
 
@@ -59,7 +60,7 @@ private lateinit var auth: FirebaseAuth
 
     private fun refresh(user: FirebaseUser?) {
         if (user!=null){
-            val intent = Intent(this,Principal::class.java)
+            val intent = Intent(this, Principal::class.java)
             startActivity(intent)
         }
     }

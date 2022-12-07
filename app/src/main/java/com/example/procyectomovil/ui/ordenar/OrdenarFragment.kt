@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.procyectomovil.databinding.FragmentOrdenarBinding
+import com.example.procyectomovil.viewmodel.OrdenarViewModel
 
 class OrdenarFragment : Fragment() {
 
@@ -28,7 +29,7 @@ class OrdenarFragment : Fragment() {
         _binding = FragmentOrdenarBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
+        val textView: TextView = binding.textOrdenar
         ordenarViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }

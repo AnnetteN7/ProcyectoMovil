@@ -4,14 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.savedstate.R
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.procyectomovil.adapter.CategoryAdapter
 import com.example.procyectomovil.databinding.FragmentHomeBinding
+import com.example.procyectomovil.viewmodel.HomeViewModel
 import io.grpc.InternalChannelz.id
 
 
@@ -38,9 +38,9 @@ class HomeFragment : Fragment() {
 
 
         val categoryAdapter= CategoryAdapter()
-        val reciclador = binding.reciclador
-        reciclador.adapter = categoryAdapter
-        reciclador.layoutManager = LinearLayoutManager(requireContext())
+        val recicladorMenu = binding.recicladorMenu
+        recicladorMenu.adapter = categoryAdapter
+        recicladorMenu.layoutManager = LinearLayoutManager(requireContext())
         homeViewModel.getCategorias.observe(viewLifecycleOwner){
                 categorias -> categoryAdapter.setCategorias(categorias)
     }

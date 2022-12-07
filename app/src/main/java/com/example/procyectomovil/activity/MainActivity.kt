@@ -1,4 +1,4 @@
-package com.example.procyectomovil
+package com.example.procyectomovil.activity
 
 
 import android.content.Intent
